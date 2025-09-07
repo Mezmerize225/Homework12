@@ -11,15 +11,15 @@ class BankAccount {
         this.accountNumber = _accountNumber;
         this.owner = _owner;
         this.#balance = _balance;
-        // console.log(_accountNumber, _owner, _balance);
     }
 
-    // set balance(value) {
-    //     this.#balance = value; 
-    // }
 
-    get balance() {
+    get getbalance() {
         return this.#balance;
+    }
+
+    newbalance(value) {
+        this.#balance = value; 
     }
 
     deposit(amount) {
@@ -39,5 +39,4 @@ class BankAccount {
 }
 
 export default BankAccount;
-// export { SavingsAccount, CheckingAccount};
 

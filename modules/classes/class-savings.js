@@ -13,19 +13,13 @@ class SavingsAccount extends BankAccount {
         this.interestRate = _interestRate
     }
 
-    // get balance() {
-    //     return this._balance;
-    // }
-
-    // set saver(value){
-
-    // }
-
 
     addInterest() {
-        let mybalance = this.balance
-        mybalance = mybalance + mybalance*0.06%
+        const mybalance = this.getbalance
+        this.interestRate = mybalance*0.0006
+        this.deposit(this.interestRate);
     }
+
 }
 
 export {SavingsAccount};
