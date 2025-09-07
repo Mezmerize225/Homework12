@@ -1,5 +1,7 @@
-import BankAccount from "./class.js";
-import { SavingsAccount, CheckingAccount } from "./class.js";
+import BankAccount from "../classes/class-bank.js";
+// import { SavingsAccount, CheckingAccount } from "./class.js";
+import { SavingsAccount } from "../classes/class-savings.js";
+import { CheckingAccount } from "../classes/class-checking.js";
 
 
 const myAccount = new BankAccount (
@@ -33,3 +35,4 @@ console.log(myExpenses);
 
 myExpenses.withdraw(60);
 console.log(myExpenses.balance);
+addInterest();
