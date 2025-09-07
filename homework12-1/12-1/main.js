@@ -29,5 +29,7 @@ myExpenses.withdraw(60);
 console.log(myExpenses);
 mySavings.addInterest();
 mySavings.addInterest();
-mySavings.addInterest();
-console.log(mySavings);
+mySavings.deposit(100);
+console.log(myExpenses.getbalance);
+console.log(mySavings.getbalance);
+
